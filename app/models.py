@@ -310,6 +310,8 @@ class Document(AuditMixin, Model):
             return self.docrequests.cdrlitem
         return ''
     
+    def request_type(self):
+        return self.docrequests.request_type
 
 
 

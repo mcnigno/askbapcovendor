@@ -1,0 +1,652 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AJAXSelectField	../app/views.py	/^from flask_appbuilder.fields import AJAXSelectField$/;"	kind:namespace	line:10
+ALLOWED_EXTENSIONS	../app/views.py	/^ALLOWED_EXTENSIONS = set(['xlsx'])$/;"	kind:variable	line:42
+APP_NAME	../config.py	/^APP_NAME = "ASK BAPCO | Vendor"  $/;"	kind:variable	line:20
+APP_THEME	../config.py	/^APP_THEME = "yeti.css"$/;"	kind:variable	line:104
+AUTH_DB	../config.py	/^from flask_appbuilder.security.manager import AUTH_OID, AUTH_REMOTE_USER, AUTH_DB, AUTH_LDAP, AUTH_OAUTH$/;"	kind:namespace	line:2
+AUTH_LDAP	../config.py	/^from flask_appbuilder.security.manager import AUTH_OID, AUTH_REMOTE_USER, AUTH_DB, AUTH_LDAP, AUTH_OAUTH$/;"	kind:namespace	line:2
+AUTH_OAUTH	../config.py	/^from flask_appbuilder.security.manager import AUTH_OID, AUTH_REMOTE_USER, AUTH_DB, AUTH_LDAP, AUTH_OAUTH$/;"	kind:namespace	line:2
+AUTH_OID	../config.py	/^from flask_appbuilder.security.manager import AUTH_OID, AUTH_REMOTE_USER, AUTH_DB, AUTH_LDAP, AUTH_OAUTH$/;"	kind:namespace	line:2
+AUTH_REMOTE_USER	../config.py	/^from flask_appbuilder.security.manager import AUTH_OID, AUTH_REMOTE_USER, AUTH_DB, AUTH_LDAP, AUTH_OAUTH$/;"	kind:namespace	line:2
+AUTH_TYPE	../config.py	/^AUTH_TYPE = AUTH_DB$/;"	kind:variable	line:34
+AppBuilder	../app/__init__.py	/^from flask.ext.appbuilder import SQLA, AppBuilder$/;"	kind:namespace	line:3
+AskBapcoView	../app/views.py	/^class AskBapcoView(MultipleView):$/;"	kind:class	line:447
+AuditMixin	../app/models.py	/^from flask_appbuilder.models.mixins import AuditMixin$/;"	kind:namespace	line:2
+BABEL_DEFAULT_FOLDER	../config.py	/^BABEL_DEFAULT_FOLDER = 'translations'$/;"	kind:variable	line:63
+BABEL_DEFAULT_LOCALE	../config.py	/^BABEL_DEFAULT_LOCALE = 'en'$/;"	kind:variable	line:61
+BadZipfile	../venv/bin/vba_extract.py	/^from zipfile import BadZipfile$/;"	kind:namespace	line:13
+BaseView	../app/index.py	/^from flask_appbuilder import BaseView, expose$/;"	kind:namespace	line:3
+BaseView	../app/views.py	/^from flask_appbuilder import BaseView, expose, has_access$/;"	kind:namespace	line:22
+CSRF_ENABLED	../config.py	/^CSRF_ENABLED = True$/;"	kind:variable	line:14
+Cdrlitem	../app/models.py	/^class Cdrlitem(Model):$/;"	kind:class	line:81
+CdrlitemView	../app/views.py	/^class CdrlitemView(ModelView):$/;"	kind:class	line:527
+Column	../app/models.py	/^from sqlalchemy import Column, Integer, String, ForeignKey $/;"	kind:namespace	line:3
+Comments	../app/models.py	/^class Comments(AuditMixin,Model):$/;"	kind:class	line:318
+CommentsView	../app/views.py	/^class CommentsView(ModelView):$/;"	kind:class	line:1121
+CompactCRUDMixin	../app/views.py	/^from flask_appbuilder import (ModelView, CompactCRUDMixin, MasterDetailView,$/;"	kind:namespace	line:3
+CsvView	../app/views.py	/^class CsvView(BaseView):$/;"	kind:class	line:49
+DataRequired	../app/views.py	/^from wtforms.validators import DataRequired, InputRequired$/;"	kind:namespace	line:24
+DocRequests	../app/models.py	/^class DocRequests(AuditMixin, Model):$/;"	kind:class	line:126
+DocRequests	../app/views.py	/^from .models import (DocRequests, Unit, Materialclass, Doctype,$/;"	kind:namespace	line:6
+DocRequestsView	../app/views.py	/^class DocRequestsView(ModelView):$/;"	kind:class	line:599
+Doctype	../app/helpers.py	/^from .models import (Matrix, Document, Unit, Materialclass, Doctype, Partner,$/;"	kind:namespace	line:5
+Doctype	../app/index.py	/^        from .models import Partner, Unit, Materialclass, Doctype$/;"	kind:namespace	line:17
+Doctype	../app/models.py	/^class Doctype(Model):$/;"	kind:class	line:47
+Doctype	../app/views.py	/^from .models import (DocRequests, Unit, Materialclass, Doctype,$/;"	kind:namespace	line:6
+DoctypeView	../app/views.py	/^class DoctypeView(ModelView):$/;"	kind:class	line:489
+Document	../app/helpers.py	/^from .models import (Matrix, Document, Unit, Materialclass, Doctype, Partner,$/;"	kind:namespace	line:5
+Document	../app/models.py	/^class Document(AuditMixin, Model):$/;"	kind:class	line:233
+DocumentView	../app/views.py	/^class DocumentView(CompactCRUDMixin, ModelView):$/;"	kind:class	line:1133
+Documentclass	../app/models.py	/^class Documentclass(Model):$/;"	kind:class	line:70
+DocumentclassView	../app/views.py	/^class DocumentclassView(ModelView):$/;"	kind:class	line:545
+EngDocumentView	../app/views.py	/^class EngDocumentView(CompactCRUDMixin, ModelView):$/;"	kind:class	line:1290
+FilterStartsWith	../app/views.py	/^from flask_appbuilder.models.sqla.filters import (FilterStartsWith,$/;"	kind:namespace	line:13
+Flask	../app/__init__.py	/^from flask import Flask$/;"	kind:namespace	line:2
+ForeignKey	../app/models.py	/^from sqlalchemy import Column, Integer, String, ForeignKey $/;"	kind:namespace	line:3
+FormHorizontalWidget	../app/views.py	/^from flask_appbuilder.widgets import FormHorizontalWidget, FormInlineWidget, FormWidget, FormVerticalWidget$/;"	kind:namespace	line:40
+FormInlineWidget	../app/views.py	/^from flask_appbuilder.widgets import FormHorizontalWidget, FormInlineWidget, FormWidget, FormVerticalWidget$/;"	kind:namespace	line:40
+FormVerticalWidget	../app/views.py	/^from flask_appbuilder.widgets import FormHorizontalWidget, FormInlineWidget, FormWidget, FormVerticalWidget$/;"	kind:namespace	line:40
+FormWidget	../app/views.py	/^from flask_appbuilder.widgets import FormHorizontalWidget, FormInlineWidget, FormWidget, FormVerticalWidget$/;"	kind:namespace	line:40
+IMG_UPLOAD_FOLDER	../config.py	/^IMG_UPLOAD_FOLDER = basedir + '\/app\/static\/uploads\/'$/;"	kind:variable	line:82
+IMG_UPLOAD_URL	../config.py	/^IMG_UPLOAD_URL = '\/static\/uploads\/'$/;"	kind:variable	line:85
+ImmutableMultiDict	../app/views.py	/^from werkzeug.datastructures import ImmutableMultiDict$/;"	kind:namespace	line:34
+InputRequired	../app/views.py	/^from wtforms.validators import DataRequired, InputRequired$/;"	kind:namespace	line:24
+Integer	../app/models.py	/^from sqlalchemy import Column, Integer, String, ForeignKey $/;"	kind:namespace	line:3
+LANGUAGES	../config.py	/^LANGUAGES = {$/;"	kind:variable	line:65
+ListBlock	../app/views.py	/^from flask_appbuilder.widgets import ListThumbnail, ListBlock$/;"	kind:namespace	line:12
+ListRequest	../app/views.py	/^class ListRequest(ModelView):$/;"	kind:class	line:1230
+ListThumbnail	../app/views.py	/^from flask_appbuilder.widgets import ListThumbnail, ListBlock$/;"	kind:namespace	line:12
+ListWidget	../app/widgets.py	/^from flask_appbuilder.widgets import ListWidget$/;"	kind:namespace	line:1
+Mail	../app/helpers.py	/^from flask_mail import Mail, Message$/;"	kind:namespace	line:852
+Markup	../app/models.py	/^from flask import Markup$/;"	kind:namespace	line:6
+Markup	../app/momentjs.py	/^from jinja2 import Markup$/;"	kind:namespace	line:1
+Markup	../app/views.py	/^from flask import Markup$/;"	kind:namespace	line:38
+MasterDetailView	../app/views.py	/^from flask_appbuilder import (ModelView, CompactCRUDMixin, MasterDetailView,$/;"	kind:namespace	line:3
+Materialclass	../app/helpers.py	/^from .models import (Matrix, Document, Unit, Materialclass, Doctype, Partner,$/;"	kind:namespace	line:5
+Materialclass	../app/index.py	/^        from .models import Partner, Unit, Materialclass, Doctype$/;"	kind:namespace	line:17
+Materialclass	../app/models.py	/^class Materialclass(Model):$/;"	kind:class	line:37
+Materialclass	../app/views.py	/^from .models import (DocRequests, Unit, Materialclass, Doctype,$/;"	kind:namespace	line:6
+MaterialclassView	../app/views.py	/^class MaterialclassView(ModelView):$/;"	kind:class	line:472
+Matrix	../app/helpers.py	/^from .models import (Matrix, Document, Unit, Materialclass, Doctype, Partner,$/;"	kind:namespace	line:5
+Matrix	../app/models.py	/^class Matrix(Model):$/;"	kind:class	line:114
+MatrixView	../app/views.py	/^class MatrixView(ModelView):$/;"	kind:class	line:722
+Message	../app/helpers.py	/^from flask_mail import Mail, Message$/;"	kind:namespace	line:852
+Model	../app/models.py	/^from flask_appbuilder import Model$/;"	kind:namespace	line:1
+ModelView	../app/views.py	/^from flask_appbuilder import (ModelView, CompactCRUDMixin, MasterDetailView,$/;"	kind:namespace	line:3
+Mr	../app/models.py	/^class Mr(Model):$/;"	kind:class	line:103
+MrView	../app/views.py	/^class MrView(ModelView):$/;"	kind:class	line:581
+MultipleViewsExp	../app/views.py	/^class MultipleViewsExp(MultipleView):$/;"	kind:class	line:729
+MyIndexView	../app/__init__.py	/^from app.index import MyIndexView$/;"	kind:namespace	line:4
+MyIndexView	../app/index.py	/^class MyIndexView(someView):$/;"	kind:class	line:35
+MyListWidget	../app/views.py	/^from .widgets import MyListWidget $/;"	kind:namespace	line:39
+MyListWidget	../app/widgets.py	/^class MyListWidget(ListWidget):$/;"	kind:class	line:4
+Oldcodes	../app/views.py	/^class Oldcodes(BaseView):$/;"	kind:class	line:906
+Partner	../app/helpers.py	/^from .models import (Matrix, Document, Unit, Materialclass, Doctype, Partner,$/;"	kind:namespace	line:5
+Partner	../app/index.py	/^        from .models import Partner, Unit, Materialclass, Doctype$/;"	kind:namespace	line:17
+Partner	../app/models.py	/^class Partner(Model):$/;"	kind:class	line:57
+PartnerRequestView	../app/views.py	/^class PartnerRequestView(MasterDetailView):$/;"	kind:class	line:1677
+PartnerView	../app/views.py	/^class PartnerView(ModelView):$/;"	kind:class	line:507
+PendingView	../app/views.py	/^class PendingView(ModelView):$/;"	kind:class	line:183
+RequestChartView	../app/views.py	/^class RequestChartView(GroupByChartView):$/;"	kind:class	line:737
+SECRET_KEY	../config.py	/^SECRET_KEY = '\\2\\1thisismyscretkey\\1\\2\\e\\y\\y\\h'$/;"	kind:variable	line:6
+SQLA	../app/__init__.py	/^from flask.ext.appbuilder import SQLA, AppBuilder$/;"	kind:namespace	line:3
+SQLAInterface	../app/helpers.py	/^from flask_appbuilder.models.sqla.interface import SQLAInterface$/;"	kind:namespace	line:2
+SQLAInterface	../app/views.py	/^from flask_appbuilder.models.sqla.interface import SQLAInterface$/;"	kind:namespace	line:2
+SQLALCHEMY_DATABASE_URI	../config.py	/^SQLALCHEMY_DATABASE_URI = 'mysql:\/\/root:lollipop300777@localhost\/askbapcovendor'$/;"	kind:variable	line:10
+SQLALCHEMY_TRACK_MODIFICATIONS	../config.py	/^SQLALCHEMY_TRACK_MODIFICATIONS = False$/;"	kind:variable	line:12
+Select2AJAXWidget	../app/views.py	/^from flask_appbuilder.fieldwidgets import Select2AJAXWidget$/;"	kind:namespace	line:9
+Setting_updateView	../app/views.py	/^class Setting_updateView(BaseView):$/;"	kind:class	line:839
+String	../app/models.py	/^from sqlalchemy import Column, Integer, String, ForeignKey $/;"	kind:namespace	line:3
+SuperDocumentView	../app/views.py	/^class SuperDocumentView(CompactCRUDMixin, ModelView):$/;"	kind:class	line:235
+SuperEngDocumentView	../app/views.py	/^class SuperEngDocumentView(CompactCRUDMixin, ModelView):$/;"	kind:class	line:1372
+SuperListRequest	../app/views.py	/^class SuperListRequest(ModelView):$/;"	kind:class	line:1615
+SuperVendorDocumentView	../app/views.py	/^class SuperVendorDocumentView(CompactCRUDMixin, ModelView):$/;"	kind:class	line:1534
+TimelineChart	../app/views.py	/^class TimelineChart(GroupByChartView):$/;"	kind:class	line:804
+UPLOAD_FOLDER	../config.py	/^UPLOAD_FOLDER = basedir + '\/app\/static\/uploads\/'$/;"	kind:variable	line:79
+Unit	../app/helpers.py	/^from .models import (Matrix, Document, Unit, Materialclass, Doctype, Partner,$/;"	kind:namespace	line:5
+Unit	../app/index.py	/^        from .models import Partner, Unit, Materialclass, Doctype$/;"	kind:namespace	line:17
+Unit	../app/models.py	/^class Unit(Model):$/;"	kind:class	line:24
+Unit	../app/views.py	/^from .models import (DocRequests, Unit, Materialclass, Doctype,$/;"	kind:namespace	line:6
+UnitView	../app/views.py	/^class UnitView(CompactCRUDMixin, ModelView):$/;"	kind:class	line:452
+Uploadcodes	../app/views.py	/^class Uploadcodes(BaseView):$/;"	kind:class	line:979
+User	../app/views.py	/^from flask_appbuilder.security.sqla.models import User$/;"	kind:namespace	line:36
+UserDBModelView	../app/views.py	/^from flask_appbuilder.security.views import UserDBModelView$/;"	kind:namespace	line:19
+UserDocumentView	../app/views.py	/^class UserDocumentView(MasterDetailView):$/;"	kind:class	line:1216
+Vendor	../app/models.py	/^class Vendor(Model):$/;"	kind:class	line:92
+VendorDocumentView	../app/views.py	/^class VendorDocumentView(CompactCRUDMixin, ModelView):$/;"	kind:class	line:1453
+VendorRequestsView	../app/views.py	/^class VendorRequestsView(ModelView):$/;"	kind:class	line:330
+VendorView	../app/views.py	/^class VendorView(ModelView):$/;"	kind:class	line:563
+ZipFile	../venv/bin/vba_extract.py	/^from zipfile import ZipFile$/;"	kind:namespace	line:12
+_	../app/models.py	/^from flask_babel import lazy_gettext as _$/;"	kind:namespace	line:8
+__init__	../app/momentjs.py	/^    def __init__(self, timestamp):$/;"	kind:member	line:5
+__init__.py	../app/__init__.py	1;"	kind:file	line:1
+__repr__	../app/models.py	/^    def __repr__(self):$/;"	kind:member	line:110
+__repr__	../app/models.py	/^    def __repr__(self):$/;"	kind:member	line:122
+__repr__	../app/models.py	/^    def __repr__(self):$/;"	kind:member	line:152
+__repr__	../app/models.py	/^    def __repr__(self):$/;"	kind:member	line:266
+__repr__	../app/models.py	/^    def __repr__(self):$/;"	kind:member	line:34
+__repr__	../app/models.py	/^    def __repr__(self):$/;"	kind:member	line:44
+__repr__	../app/models.py	/^    def __repr__(self):$/;"	kind:member	line:54
+__repr__	../app/models.py	/^    def __repr__(self):$/;"	kind:member	line:66
+__repr__	../app/models.py	/^    def __repr__(self):$/;"	kind:member	line:77
+__repr__	../app/models.py	/^    def __repr__(self):$/;"	kind:member	line:88
+__repr__	../app/models.py	/^    def __repr__(self):$/;"	kind:member	line:99
+__tablename__	../app/models.py	/^    __tablename__ = "cdrlitem"$/;"	kind:variable	line:82
+__tablename__	../app/models.py	/^    __tablename__ = "comments"$/;"	kind:variable	line:319
+__tablename__	../app/models.py	/^    __tablename__ = "docrequests"$/;"	kind:variable	line:127
+__tablename__	../app/models.py	/^    __tablename__ = "doctype"$/;"	kind:variable	line:48
+__tablename__	../app/models.py	/^    __tablename__ = "document"$/;"	kind:variable	line:234
+__tablename__	../app/models.py	/^    __tablename__ = "documentclass"$/;"	kind:variable	line:71
+__tablename__	../app/models.py	/^    __tablename__ = "materialclass"$/;"	kind:variable	line:38
+__tablename__	../app/models.py	/^    __tablename__ = "matrix"$/;"	kind:variable	line:115
+__tablename__	../app/models.py	/^    __tablename__ = "mr"$/;"	kind:variable	line:104
+__tablename__	../app/models.py	/^    __tablename__ = "partner"$/;"	kind:variable	line:58
+__tablename__	../app/models.py	/^    __tablename__ = "unit"$/;"	kind:variable	line:25
+__tablename__	../app/models.py	/^    __tablename__ = "vendor"$/;"	kind:variable	line:93
+action	../app/views.py	/^from flask_appbuilder.actions import action$/;"	kind:namespace	line:30
+add	../app/views.py	/^    def add(self):$/;"	kind:member	line:437
+add	../app/views.py	/^    def add(self):$/;"	kind:member	line:706
+add_columns	../app/views.py	/^    add_columns = ['cdrlitem', 'name', 'description']$/;"	kind:variable	line:531
+add_columns	../app/views.py	/^    add_columns = ['doc', 'comment']$/;"	kind:variable	line:1124
+add_columns	../app/views.py	/^    add_columns = ['doctype', 'name', 'description']$/;"	kind:variable	line:493
+add_columns	../app/views.py	/^    add_columns = ['documentclass', 'name', 'description']$/;"	kind:variable	line:549
+add_columns	../app/views.py	/^    add_columns = ['materialclass', 'name', 'description']$/;"	kind:variable	line:475
+add_columns	../app/views.py	/^    add_columns = ['mr', 'name', 'description']$/;"	kind:variable	line:585
+add_columns	../app/views.py	/^    add_columns = ['partner', 'name', 'common_start', 'common_stop', 'description']$/;"	kind:variable	line:511
+add_columns	../app/views.py	/^    add_columns = ['unit', 'name', 'unit_type', 'start', 'stop']$/;"	kind:variable	line:456
+add_columns	../app/views.py	/^    add_columns = ['vendor', 'name', 'description']$/;"	kind:variable	line:567
+add_exclude_columns	../app/views.py	/^    add_exclude_columns = ['id', 'matrix']$/;"	kind:variable	line:1260
+add_exclude_columns	../app/views.py	/^    add_exclude_columns = ['id', 'matrix']$/;"	kind:variable	line:1648
+add_exclude_columns	../app/views.py	/^    add_exclude_columns = ['id', 'matrix']$/;"	kind:variable	line:387
+add_exclude_columns	../app/views.py	/^    add_exclude_columns = ['id', 'matrix']$/;"	kind:variable	line:649
+add_fieldsets	../app/views.py	/^    add_fieldsets = [$/;"	kind:variable	line:1262
+add_fieldsets	../app/views.py	/^    add_fieldsets = [$/;"	kind:variable	line:1650
+add_fieldsets	../app/views.py	/^    add_fieldsets = [$/;"	kind:variable	line:389
+add_fieldsets	../app/views.py	/^    add_fieldsets = [$/;"	kind:variable	line:651
+add_form_extra_fields	../app/views.py	/^    add_form_extra_fields = {$/;"	kind:variable	line:681
+add_template	../app/views.py	/^    add_template = 'appbuilder\/general\/model\/add_eng.html'$/;"	kind:variable	line:629
+add_template	../app/views.py	/^    add_template = 'appbuilder\/general\/model\/add_ven.html'$/;"	kind:variable	line:355
+add_title	../app/views.py	/^    add_title = 'Add Engineering Code Request'$/;"	kind:variable	line:632
+add_title	../app/views.py	/^    add_title = 'Add Vendor Code Request'$/;"	kind:variable	line:370
+add_title	../app/views.py	/^    add_title = 'Add new Request'$/;"	kind:variable	line:1237
+add_title	../app/views.py	/^    add_title = 'Add new Request'$/;"	kind:variable	line:1625
+adddoc3	../app/helpers.py	/^def adddoc3(self, item):$/;"	kind:function	line:20
+adddoc3	../app/views.py	/^from .helpers import (adddoc3, bapco, tocsv, toxlsx, codes_to_xlsx, $/;"	kind:namespace	line:25
+aggregate_count	../app/views.py	/^from flask_appbuilder.models.group import aggregate_count, aggregate_sum$/;"	kind:namespace	line:11
+aggregate_sum	../app/views.py	/^from flask_appbuilder.models.group import aggregate_count, aggregate_sum$/;"	kind:namespace	line:11
+ajax_upload_form	../app/views.py	/^    def ajax_upload_form(self):$/;"	kind:member	line:1059
+allowed_file	../app/views.py	/^def allowed_file(filename):$/;"	kind:function	line:834
+app	../app/__init__.py	/^app = Flask(__name__)$/;"	kind:variable	line:19
+app	../app/helpers.py	/^from app import app$/;"	kind:namespace	line:12
+app	../app/views.py	/^from app import app$/;"	kind:namespace	line:29
+app	../run.py	/^from app import app$/;"	kind:namespace	line:1
+app	../webtools.py	/^from app import app$/;"	kind:namespace	line:1
+app	../wsgi.py	/^from app import app$/;"	kind:namespace	line:1
+appbuilder	../app/__init__.py	/^appbuilder = AppBuilder(app, db.session, indexview=MyIndexView, base_template='mybase.html')$/;"	kind:variable	line:24
+appbuilder	../app/views.py	/^from app import appbuilder, db$/;"	kind:namespace	line:5
+bapco	../app/helpers.py	/^def bapco(self, item):$/;"	kind:function	line:124
+bapco	../app/views.py	/^from .helpers import (adddoc3, bapco, tocsv, toxlsx, codes_to_xlsx, $/;"	kind:namespace	line:25
+bapco_code	../app/models.py	/^    def bapco_code(self):$/;"	kind:member	line:298
+base_filters	../app/views.py	/^    base_filters = [['created_by', FilterEqualFunction, get_user],$/;"	kind:variable	line:359
+base_filters	../app/views.py	/^    base_filters = [['created_by', FilterEqualFunction, get_user],$/;"	kind:variable	line:621
+base_filters	../app/views.py	/^    base_filters = [['created_by', FilterEqualFunction, get_user],['docrequests.request_type', FilterStartsWith, 'eng']]$/;"	kind:variable	line:1298
+base_filters	../app/views.py	/^    base_filters = [['created_by', FilterEqualFunction, get_user],['docrequests.request_type', FilterStartsWith, 'ven']]$/;"	kind:variable	line:1461
+base_filters	../app/views.py	/^    base_filters = [['created_by', FilterEqualFunction, get_user],['docrequests.request_type',FilterEqual,'Vendor']]$/;"	kind:variable	line:1141
+base_filters	../app/views.py	/^    base_filters = [['created_by', FilterEqualFunction, get_user],['request_type',FilterEqual,'Vendor']]$/;"	kind:variable	line:1233
+base_filters	../app/views.py	/^    base_filters = [['docrequests.request_type', FilterStartsWith, 'eng']]$/;"	kind:variable	line:1380
+base_filters	../app/views.py	/^    base_filters = [['docrequests.request_type', FilterStartsWith, 'ven']]$/;"	kind:variable	line:1542
+base_filters	../app/views.py	/^    base_filters = [['docrequests.request_type', FilterStartsWith, 'vendor']]$/;"	kind:variable	line:243
+base_filters	../app/views.py	/^    base_filters = [['oldcode', FilterStartsWith, 'empty'],$/;"	kind:variable	line:189
+base_filters	../app/views.py	/^    base_filters = [['request_type', FilterEqual,'Vendor']]$/;"	kind:variable	line:1620
+base_order	../app/views.py	/^    base_order = ('id', 'desc')$/;"	kind:variable	line:1140
+base_order	../app/views.py	/^    base_order = ('id', 'desc')$/;"	kind:variable	line:1232
+base_order	../app/views.py	/^    base_order = ('id', 'desc')$/;"	kind:variable	line:1297
+base_order	../app/views.py	/^    base_order = ('id', 'desc')$/;"	kind:variable	line:1379
+base_order	../app/views.py	/^    base_order = ('id', 'desc')$/;"	kind:variable	line:1460
+base_order	../app/views.py	/^    base_order = ('id', 'desc')$/;"	kind:variable	line:1541
+base_order	../app/views.py	/^    base_order = ('id', 'desc')$/;"	kind:variable	line:1617
+base_order	../app/views.py	/^    base_order = ('id', 'desc')$/;"	kind:variable	line:188
+base_order	../app/views.py	/^    base_order = ('id', 'desc')$/;"	kind:variable	line:240
+base_order	../app/views.py	/^    base_order = ('id', 'desc')$/;"	kind:variable	line:357
+base_order	../app/views.py	/^    base_order = ('id', 'desc')$/;"	kind:variable	line:620
+base_permissions	../app/views.py	/^    base_permissions = ['can_add','can_list','can_show'] $/;"	kind:variable	line:363
+base_permissions	../app/views.py	/^    base_permissions = ['can_add','can_list','can_show'] $/;"	kind:variable	line:624
+base_permissions	../app/views.py	/^    base_permissions = ['can_list', 'can_show', 'can_edit', 'can_delete'] $/;"	kind:variable	line:242
+base_permissions	../app/views.py	/^    base_permissions = ['can_list', 'can_show', 'can_edit'] $/;"	kind:variable	line:1142
+base_permissions	../app/views.py	/^    base_permissions = ['can_list', 'can_show', 'can_edit'] $/;"	kind:variable	line:1299
+base_permissions	../app/views.py	/^    base_permissions = ['can_list', 'can_show', 'can_edit'] $/;"	kind:variable	line:1381
+base_permissions	../app/views.py	/^    base_permissions = ['can_list', 'can_show', 'can_edit'] $/;"	kind:variable	line:1462
+base_permissions	../app/views.py	/^    base_permissions = ['can_list', 'can_show', 'can_edit'] $/;"	kind:variable	line:1543
+base_permissions	../app/views.py	/^    base_permissions = ['can_list', 'can_show', 'can_edit'] $/;"	kind:variable	line:193
+base_permissions	../app/views.py	/^    base_permissions = ['can_list', 'can_show','can_delete'] $/;"	kind:variable	line:1619
+base_permissions	../app/views.py	/^    base_permissions = ['can_list', 'can_show'] $/;"	kind:variable	line:1234
+basedir	../config.py	/^basedir = os.path.abspath(os.path.dirname(__file__))$/;"	kind:variable	line:3
+calendar	../app/momentjs.py	/^    def calendar(self):$/;"	kind:member	line:14
+cdrl_item	../app/models.py	/^    def cdrl_item(self):$/;"	kind:member	line:308
+cdrlitem	../app/models.py	/^    cdrlitem = Column(String(35), unique=True, nullable=False)$/;"	kind:variable	line:84
+cdrlitem	../app/models.py	/^    cdrlitem = relationship('Cdrlitem')$/;"	kind:variable	line:139
+cdrlitem	../app/models.py	/^    cdrlitem = relationship('Cdrlitem')$/;"	kind:variable	line:254
+cdrlitem_c	../app/models.py	/^    def cdrlitem_c(self):$/;"	kind:member	line:213
+cdrlitem_id	../app/models.py	/^    cdrlitem_id = Column(Integer, ForeignKey('cdrlitem.id'))$/;"	kind:variable	line:138
+cdrlitem_id	../app/models.py	/^    cdrlitem_id = Column(Integer, ForeignKey('cdrlitem.id'))$/;"	kind:variable	line:253
+chart_title	../app/views.py	/^    chart_title = 'Requests Chart'$/;"	kind:variable	line:740
+chart_title	../app/views.py	/^    chart_title = 'Timeline Requests Chart'$/;"	kind:variable	line:807
+chart_type	../app/views.py	/^    chart_type = 'BarChart'$/;"	kind:variable	line:743
+chart_type	../app/views.py	/^    chart_type = 'BarChart'$/;"	kind:variable	line:809
+closed	../app/models.py	/^    closed = Column(String(3), default='no')$/;"	kind:variable	line:324
+code	../app/models.py	/^    code = Column(String(35))$/;"	kind:variable	line:236
+code_type	../app/helpers.py	/^def code_type(item):$/;"	kind:function	line:15
+code_type	../app/models.py	/^    def code_type(self):$/;"	kind:member	line:282
+codes_to_xlsx	../app/helpers.py	/^def codes_to_xlsx(codes_list):$/;"	kind:function	line:492
+codes_to_xlsx	../app/views.py	/^from .helpers import (adddoc3, bapco, tocsv, toxlsx, codes_to_xlsx, $/;"	kind:namespace	line:25
+col_name	../app/views.py	/^                                             col_name='unit',$/;"	kind:variable	line:685
+comment	../app/models.py	/^    comment = Column(String(250))$/;"	kind:variable	line:323
+common_start	../app/models.py	/^    common_start = Column(Integer, default=0)$/;"	kind:variable	line:63
+common_stop	../app/models.py	/^    common_stop = Column(Integer, default=0)$/;"	kind:variable	line:64
+config.py	../config.py	1;"	kind:file	line:1
+counter	../app/models.py	/^    counter = Column(Integer, default=1)$/;"	kind:variable	line:118
+created	../app/models.py	/^    def created(self):$/;"	kind:member	line:163
+created	../app/models.py	/^    def created(self):$/;"	kind:member	line:285
+created	../app/models.py	/^    def created(self):$/;"	kind:member	line:326
+csv	../app/helpers.py	/^import csv, xlsxwriter$/;"	kind:namespace	line:8
+csv	../app/models.py	/^    def csv(self):$/;"	kind:member	line:158
+csv	../app/views.py	/^import csv$/;"	kind:namespace	line:28
+datamodel	../app/views.py	/^                                             datamodel=datamodel,$/;"	kind:variable	line:684
+datamodel	../app/views.py	/^    datamodel = SQLAInterface(Cdrlitem)$/;"	kind:variable	line:528
+datamodel	../app/views.py	/^    datamodel = SQLAInterface(Comments)$/;"	kind:variable	line:1122
+datamodel	../app/views.py	/^    datamodel = SQLAInterface(DocRequests)$/;"	kind:variable	line:1231
+datamodel	../app/views.py	/^    datamodel = SQLAInterface(DocRequests)$/;"	kind:variable	line:1616
+datamodel	../app/views.py	/^    datamodel = SQLAInterface(DocRequests)$/;"	kind:variable	line:331
+datamodel	../app/views.py	/^    datamodel = SQLAInterface(DocRequests)$/;"	kind:variable	line:448
+datamodel	../app/views.py	/^    datamodel = SQLAInterface(DocRequests)$/;"	kind:variable	line:600
+datamodel	../app/views.py	/^    datamodel = SQLAInterface(DocRequests)$/;"	kind:variable	line:738
+datamodel	../app/views.py	/^    datamodel = SQLAInterface(DocRequests)$/;"	kind:variable	line:805
+datamodel	../app/views.py	/^    datamodel = SQLAInterface(Doctype)$/;"	kind:variable	line:490
+datamodel	../app/views.py	/^    datamodel = SQLAInterface(Document)$/;"	kind:variable	line:1135
+datamodel	../app/views.py	/^    datamodel = SQLAInterface(Document)$/;"	kind:variable	line:1292
+datamodel	../app/views.py	/^    datamodel = SQLAInterface(Document)$/;"	kind:variable	line:1374
+datamodel	../app/views.py	/^    datamodel = SQLAInterface(Document)$/;"	kind:variable	line:1455
+datamodel	../app/views.py	/^    datamodel = SQLAInterface(Document)$/;"	kind:variable	line:1536
+datamodel	../app/views.py	/^    datamodel = SQLAInterface(Document)$/;"	kind:variable	line:185
+datamodel	../app/views.py	/^    datamodel = SQLAInterface(Document)$/;"	kind:variable	line:236
+datamodel	../app/views.py	/^    datamodel = SQLAInterface(Documentclass)$/;"	kind:variable	line:546
+datamodel	../app/views.py	/^    datamodel = SQLAInterface(Materialclass)$/;"	kind:variable	line:473
+datamodel	../app/views.py	/^    datamodel = SQLAInterface(Matrix)$/;"	kind:variable	line:723
+datamodel	../app/views.py	/^    datamodel = SQLAInterface(Mr)$/;"	kind:variable	line:582
+datamodel	../app/views.py	/^    datamodel = SQLAInterface(Partner)$/;"	kind:variable	line:1678
+datamodel	../app/views.py	/^    datamodel = SQLAInterface(Partner)$/;"	kind:variable	line:508
+datamodel	../app/views.py	/^    datamodel = SQLAInterface(Unit)$/;"	kind:variable	line:453
+datamodel	../app/views.py	/^    datamodel = SQLAInterface(User)$/;"	kind:variable	line:1217
+datamodel	../app/views.py	/^    datamodel = SQLAInterface(Vendor)$/;"	kind:variable	line:564
+db	../app/__init__.py	/^db = SQLA(app)$/;"	kind:variable	line:23
+db	../app/helpers.py	/^from app import db$/;"	kind:namespace	line:1
+db	../app/index.py	/^        from app import db$/;"	kind:namespace	line:16
+db	../app/views.py	/^from app import appbuilder, db$/;"	kind:namespace	line:5
+default_view	../app/index.py	/^    default_view = 'index'$/;"	kind:variable	line:11
+default_view	../app/views.py	/^    default_view = 'add'$/;"	kind:variable	line:332
+default_view	../app/views.py	/^    default_view = 'add'$/;"	kind:variable	line:601
+default_view	../app/views.py	/^    default_view = 'oldcodes'$/;"	kind:variable	line:907
+default_view	../app/views.py	/^    default_view = 'upload_form'$/;"	kind:variable	line:981
+default_view	../app/views.py	/^    default_view = 'upload_setting'$/;"	kind:variable	line:840
+definitions	../app/views.py	/^    definitions = [$/;"	kind:variable	line:745
+definitions	../app/views.py	/^    definitions = [$/;"	kind:variable	line:811
+description	../app/models.py	/^    description = Column(String(100))$/;"	kind:variable	line:108
+description	../app/models.py	/^    description = Column(String(100))$/;"	kind:variable	line:32
+description	../app/models.py	/^    description = Column(String(100))$/;"	kind:variable	line:42
+description	../app/models.py	/^    description = Column(String(100))$/;"	kind:variable	line:52
+description	../app/models.py	/^    description = Column(String(100))$/;"	kind:variable	line:62
+description	../app/models.py	/^    description = Column(String(100))$/;"	kind:variable	line:75
+description	../app/models.py	/^    description = Column(String(100))$/;"	kind:variable	line:86
+description	../app/models.py	/^    description = Column(String(100))$/;"	kind:variable	line:97
+description	../app/views.py	/^                                             description='This is by AJAX',$/;"	kind:variable	line:683
+doc	../app/models.py	/^    doc = relationship(Document)$/;"	kind:variable	line:322
+doc_id	../app/models.py	/^    doc_id = Column(Integer, ForeignKey('document.id'), nullable=False)$/;"	kind:variable	line:321
+docrequests	../app/models.py	/^    docrequests = relationship(DocRequests)$/;"	kind:variable	line:239
+docrequests_id	../app/models.py	/^    docrequests_id = Column(Integer, ForeignKey('docrequests.id'))$/;"	kind:variable	line:238
+doctype	../app/models.py	/^    doctype = Column(String(3), unique=True, nullable=False)$/;"	kind:variable	line:50
+doctype	../app/models.py	/^    doctype = relationship('Doctype')$/;"	kind:variable	line:134
+doctype	../app/models.py	/^    doctype = relationship('Doctype')$/;"	kind:variable	line:249
+doctype_c	../app/models.py	/^    def doctype_c(self):$/;"	kind:member	line:204
+doctype_id	../app/models.py	/^    doctype_id = Column(Integer, ForeignKey('doctype.id'), nullable=False)$/;"	kind:variable	line:133
+doctype_id	../app/models.py	/^    doctype_id = Column(Integer, ForeignKey('doctype.id'), nullable=False)$/;"	kind:variable	line:248
+documentclass	../app/models.py	/^    documentclass = Column(String(1), unique=True, nullable=False)$/;"	kind:variable	line:73
+documentclass	../app/models.py	/^    documentclass = relationship('Documentclass')$/;"	kind:variable	line:141
+documentclass	../app/models.py	/^    documentclass = relationship('Documentclass')$/;"	kind:variable	line:256
+documentclass_c	../app/models.py	/^    def documentclass_c(self):$/;"	kind:member	line:216
+documentclass_id	../app/models.py	/^    documentclass_id = Column(Integer, ForeignKey('documentclass.id'))$/;"	kind:variable	line:140
+documentclass_id	../app/models.py	/^    documentclass_id = Column(Integer, ForeignKey('documentclass.id'))$/;"	kind:variable	line:255
+e	../venv/bin/vba_extract.py	/^    e = sys.exc_info()[1]$/;"	kind:variable	line:44
+e	../venv/bin/vba_extract.py	/^    e = sys.exc_info()[1]$/;"	kind:variable	line:50
+e	../venv/bin/vba_extract.py	/^    e = sys.exc_info()[1]$/;"	kind:variable	line:57
+e	../venv/bin/vba_extract.py	/^    e = sys.exc_info()[1]$/;"	kind:variable	line:64
+edit_columns	../app/views.py	/^    edit_columns = ['cdrlitem', 'name', 'description']$/;"	kind:variable	line:532
+edit_columns	../app/views.py	/^    edit_columns = ['comment']$/;"	kind:variable	line:1126
+edit_columns	../app/views.py	/^    edit_columns = ['doctype', 'name', 'description']$/;"	kind:variable	line:494
+edit_columns	../app/views.py	/^    edit_columns = ['documentclass', 'name', 'description']$/;"	kind:variable	line:550
+edit_columns	../app/views.py	/^    edit_columns = ['materialclass', 'name', 'description']$/;"	kind:variable	line:476
+edit_columns	../app/views.py	/^    edit_columns = ['mr', 'name', 'description']$/;"	kind:variable	line:586
+edit_columns	../app/views.py	/^    edit_columns = ['oldcode', 'cdrlitem', 'documentclass','vendor','mr','notes']$/;"	kind:variable	line:251
+edit_columns	../app/views.py	/^    edit_columns = ['oldcode', 'notes'] $/;"	kind:variable	line:199
+edit_columns	../app/views.py	/^    edit_columns = ['oldcode', 'notes']$/;"	kind:variable	line:1150
+edit_columns	../app/views.py	/^    edit_columns = ['oldcode', 'notes']$/;"	kind:variable	line:1307
+edit_columns	../app/views.py	/^    edit_columns = ['oldcode', 'notes']$/;"	kind:variable	line:1389
+edit_columns	../app/views.py	/^    edit_columns = ['oldcode', 'notes']$/;"	kind:variable	line:1470
+edit_columns	../app/views.py	/^    edit_columns = ['oldcode', 'notes']$/;"	kind:variable	line:1551
+edit_columns	../app/views.py	/^    edit_columns = ['partner', 'name', 'common_start', 'common_stop', 'description']$/;"	kind:variable	line:512
+edit_columns	../app/views.py	/^    edit_columns = ['unit', 'materialclass', 'doctype', 'cdrlitem',$/;"	kind:variable	line:381
+edit_columns	../app/views.py	/^    edit_columns = ['unit', 'materialclass', 'doctype', 'cdrlitem',$/;"	kind:variable	line:642
+edit_columns	../app/views.py	/^    edit_columns = ['unit', 'materialclass', 'doctype', 'partner']$/;"	kind:variable	line:1257
+edit_columns	../app/views.py	/^    edit_columns = ['unit', 'materialclass', 'doctype', 'partner']$/;"	kind:variable	line:1645
+edit_columns	../app/views.py	/^    edit_columns = ['unit', 'name', 'unit_type', 'start', 'stop']$/;"	kind:variable	line:457
+edit_columns	../app/views.py	/^    edit_columns = ['vendor', 'name', 'description']$/;"	kind:variable	line:568
+edit_template	../app/views.py	/^    edit_template = 'appbuilder\/general\/model\/edit_cascade.html'$/;"	kind:variable	line:1243
+edit_template	../app/views.py	/^    edit_template = 'appbuilder\/general\/model\/edit_cascade.html'$/;"	kind:variable	line:1631
+edit_template	../app/views.py	/^    edit_template = 'appbuilder\/general\/model\/edit_cascade.html'$/;"	kind:variable	line:353
+edit_template	../app/views.py	/^    edit_template = 'appbuilder\/general\/model\/edit_cascade.html'$/;"	kind:variable	line:627
+edit_title	../app/views.py	/^    edit_title = 'Edit Code Request'$/;"	kind:variable	line:1238
+edit_title	../app/views.py	/^    edit_title = 'Edit Code Request'$/;"	kind:variable	line:1626
+edit_title	../app/views.py	/^    edit_title = 'Edit Code'$/;"	kind:variable	line:1144
+edit_title	../app/views.py	/^    edit_title = 'Edit Code'$/;"	kind:variable	line:1301
+edit_title	../app/views.py	/^    edit_title = 'Edit Code'$/;"	kind:variable	line:1383
+edit_title	../app/views.py	/^    edit_title = 'Edit Code'$/;"	kind:variable	line:1464
+edit_title	../app/views.py	/^    edit_title = 'Edit Code'$/;"	kind:variable	line:1545
+edit_title	../app/views.py	/^    edit_title = 'Edit Code'$/;"	kind:variable	line:195
+edit_title	../app/views.py	/^    edit_title = 'Edit Code'$/;"	kind:variable	line:245
+edit_title	../app/views.py	/^    edit_title = 'Edit Engineering Code Request'$/;"	kind:variable	line:633
+edit_title	../app/views.py	/^    edit_title = 'Edit Vendor Code Request'$/;"	kind:variable	line:371
+ex	../app/views.py	/^    def ex(self):$/;"	kind:member	line:297
+export	../app/views.py	/^    def export(self, items):$/;"	kind:member	line:1170
+export	../app/views.py	/^    def export(self, items):$/;"	kind:member	line:1327
+export	../app/views.py	/^    def export(self, items):$/;"	kind:member	line:1409
+export	../app/views.py	/^    def export(self, items):$/;"	kind:member	line:1490
+export	../app/views.py	/^    def export(self, items):$/;"	kind:member	line:1571
+export	../app/views.py	/^    def export(self, items):$/;"	kind:member	line:214
+export	../app/views.py	/^    def export(self, items):$/;"	kind:member	line:277
+export_all	../app/views.py	/^    def export_all(self, items):$/;"	kind:member	line:304
+expose	../app/index.py	/^from flask_appbuilder import BaseView, expose$/;"	kind:namespace	line:3
+expose	../app/views.py	/^from flask_appbuilder import BaseView, expose, has_access$/;"	kind:namespace	line:22
+filemanager	../app/views.py	/^from flask_appbuilder import filemanager$/;"	kind:namespace	line:31
+flash	../app/helpers.py	/^from flask import flash, send_file, make_response, redirect, url_for$/;"	kind:namespace	line:3
+flash	../app/views.py	/^from flask import render_template, flash, redirect, url_for$/;"	kind:namespace	line:1
+format	../app/momentjs.py	/^    def format(self, fmt):$/;"	kind:member	line:11
+fromNow	../app/momentjs.py	/^    def fromNow(self):$/;"	kind:member	line:17
+g	../app/views.py	/^from flask import g, send_file$/;"	kind:namespace	line:20
+gen_excel_byreq	../app/helpers.py	/^def gen_excel_byreq(req_item):$/;"	kind:function	line:673
+get_user	../app/views.py	/^def get_user():$/;"	kind:function	line:46
+gettext	../app/views.py	/^from flask_babel import gettext$/;"	kind:namespace	line:21
+gmtime	../app/models.py	/^from time import gmtime, strftime$/;"	kind:namespace	line:5
+has_access	../app/views.py	/^from flask_appbuilder import BaseView, expose, has_access$/;"	kind:namespace	line:22
+helpers.py	../app/helpers.py	1;"	kind:file	line:1
+id	../app/models.py	/^    id = Column(Integer, primary_key=True)$/;"	kind:variable	line:105
+id	../app/models.py	/^    id = Column(Integer, primary_key=True)$/;"	kind:variable	line:116
+id	../app/models.py	/^    id = Column(Integer, primary_key=True)$/;"	kind:variable	line:128
+id	../app/models.py	/^    id = Column(Integer, primary_key=True)$/;"	kind:variable	line:235
+id	../app/models.py	/^    id = Column(Integer, primary_key=True)$/;"	kind:variable	line:26
+id	../app/models.py	/^    id = Column(Integer, primary_key=True)$/;"	kind:variable	line:320
+id	../app/models.py	/^    id = Column(Integer, primary_key=True)$/;"	kind:variable	line:39
+id	../app/models.py	/^    id = Column(Integer, primary_key=True)$/;"	kind:variable	line:49
+id	../app/models.py	/^    id = Column(Integer, primary_key=True)$/;"	kind:variable	line:59
+id	../app/models.py	/^    id = Column(Integer, primary_key=True)$/;"	kind:variable	line:72
+id	../app/models.py	/^    id = Column(Integer, primary_key=True)$/;"	kind:variable	line:83
+id	../app/models.py	/^    id = Column(Integer, primary_key=True)$/;"	kind:variable	line:94
+index	../app/index.py	/^    def index(self):$/;"	kind:member	line:15
+index.py	../app/index.py	1;"	kind:file	line:1
+index_template	../app/index.py	/^    index_template = 'appbuilder\/index.html'$/;"	kind:variable	line:12
+index_template	../app/index.py	/^    index_template = 'index.html'$/;"	kind:variable	line:36
+init_bapco	../app/helpers.py	/^def init_bapco(self, item):$/;"	kind:function	line:276
+label_columns	../app/views.py	/^    label_columns = UnitView.label_columns$/;"	kind:variable	line:741
+label_columns	../app/views.py	/^    label_columns = {$/;"	kind:variable	line:1156
+label_columns	../app/views.py	/^    label_columns = {$/;"	kind:variable	line:1248
+label_columns	../app/views.py	/^    label_columns = {$/;"	kind:variable	line:1313
+label_columns	../app/views.py	/^    label_columns = {$/;"	kind:variable	line:1395
+label_columns	../app/views.py	/^    label_columns = {$/;"	kind:variable	line:1476
+label_columns	../app/views.py	/^    label_columns = {$/;"	kind:variable	line:1557
+label_columns	../app/views.py	/^    label_columns = {$/;"	kind:variable	line:1636
+label_columns	../app/views.py	/^    label_columns = {$/;"	kind:variable	line:201
+label_columns	../app/views.py	/^    label_columns = {$/;"	kind:variable	line:253
+label_columns	../app/views.py	/^    label_columns = {$/;"	kind:variable	line:335
+label_columns	../app/views.py	/^    label_columns = {$/;"	kind:variable	line:603
+list_columns	../app/views.py	/^    list_columns = ['cdrlitem', 'name', 'description']$/;"	kind:variable	line:529
+list_columns	../app/views.py	/^    list_columns = ['code_type', 'bapco_code', 'oldcode_p', 'created','docrequests.request_type']$/;"	kind:variable	line:198
+list_columns	../app/views.py	/^    list_columns = ['code_type', 'bapco_code', 'oldcode_p', 'created']$/;"	kind:variable	line:1149
+list_columns	../app/views.py	/^    list_columns = ['code_type', 'bapco_code', 'oldcode_p', 'created']$/;"	kind:variable	line:1469
+list_columns	../app/views.py	/^    list_columns = ['code_type', 'bapco_code', 'oldcode_p', 'created']$/;"	kind:variable	line:1550
+list_columns	../app/views.py	/^    list_columns = ['code_type', 'bapco_code', 'oldcode_p', 'created']$/;"	kind:variable	line:250
+list_columns	../app/views.py	/^    list_columns = ['code_type', 'bapco_code', 'oldcode_p','created']$/;"	kind:variable	line:1306
+list_columns	../app/views.py	/^    list_columns = ['code_type', 'bapco_code', 'oldcode_p','created']$/;"	kind:variable	line:1388
+list_columns	../app/views.py	/^    list_columns = ['doc','comment', 'created_by', 'created', 'changed_by', 'modified']$/;"	kind:variable	line:1123
+list_columns	../app/views.py	/^    list_columns = ['doctype', 'name', 'description']$/;"	kind:variable	line:491
+list_columns	../app/views.py	/^    list_columns = ['documentclass','name', 'description']$/;"	kind:variable	line:547
+list_columns	../app/views.py	/^    list_columns = ['id', 'matrix', 'counter']$/;"	kind:variable	line:724
+list_columns	../app/views.py	/^    list_columns = ['materialclass', 'name', 'description']$/;"	kind:variable	line:474
+list_columns	../app/views.py	/^    list_columns = ['mr', 'name', 'description']$/;"	kind:variable	line:583
+list_columns	../app/views.py	/^    list_columns = ['partner', 'common_start', 'common_stop', 'description']$/;"	kind:variable	line:509
+list_columns	../app/views.py	/^    list_columns = ['req_type', 'quantity', 'req_description', 'created_by', 'created']$/;"	kind:variable	line:379
+list_columns	../app/views.py	/^    list_columns = ['req_type', 'quantity', 'req_description', 'created_by', 'created']$/;"	kind:variable	line:640
+list_columns	../app/views.py	/^    list_columns = ['req_type', 'req_description', 'created', 'csv']$/;"	kind:variable	line:1644
+list_columns	../app/views.py	/^    list_columns = ['req_type','request_type', 'req_description', 'created', 'csv']$/;"	kind:variable	line:1256
+list_columns	../app/views.py	/^    list_columns = ['unit', 'name', 'unit_type', 'description']$/;"	kind:variable	line:454
+list_columns	../app/views.py	/^    list_columns = ['vendor', 'description']$/;"	kind:variable	line:565
+list_title	../app/views.py	/^    list_title = 'All Requests'$/;"	kind:variable	line:1236
+list_title	../app/views.py	/^    list_title = 'Bapco Vendor Codes'$/;"	kind:variable	line:1136
+list_title	../app/views.py	/^    list_title = 'Engineering Code Request'$/;"	kind:variable	line:631
+list_title	../app/views.py	/^    list_title = 'Engineering Codes List'$/;"	kind:variable	line:1293
+list_title	../app/views.py	/^    list_title = 'Engineering Codes List'$/;"	kind:variable	line:1375
+list_title	../app/views.py	/^    list_title = 'Pending Codes'$/;"	kind:variable	line:186
+list_title	../app/views.py	/^    list_title = 'Supervisor - All Requests'$/;"	kind:variable	line:1624
+list_title	../app/views.py	/^    list_title = 'Supervisor | All Bapco Codes'$/;"	kind:variable	line:237
+list_title	../app/views.py	/^    list_title = 'Vendor Code Request'$/;"	kind:variable	line:369
+list_title	../app/views.py	/^    list_title = 'Vendor Codes List'$/;"	kind:variable	line:1456
+list_title	../app/views.py	/^    list_title = 'Vendor Codes List'$/;"	kind:variable	line:1537
+list_widget	../app/views.py	/^    list_widget = ListBlock$/;"	kind:variable	line:731
+list_widget	../app/views.py	/^    list_widget = ListThumbnail$/;"	kind:variable	line:515
+logging	../app/__init__.py	/^import logging$/;"	kind:namespace	line:1
+mail	../app/helpers.py	/^mail = Mail(app)$/;"	kind:variable	line:854
+mailsupport	../app/helpers.py	/^def mailsupport(codes, filename):$/;"	kind:function	line:856
+make_response	../app/helpers.py	/^from flask import flash, send_file, make_response, redirect, url_for$/;"	kind:namespace	line:3
+materialclass	../app/models.py	/^    materialclass = Column(String(1), unique=True, nullable=False)$/;"	kind:variable	line:40
+materialclass	../app/models.py	/^    materialclass = relationship('Materialclass')$/;"	kind:variable	line:132
+materialclass	../app/models.py	/^    materialclass = relationship('Materialclass')$/;"	kind:variable	line:247
+materialclass_c	../app/models.py	/^    def materialclass_c(self):$/;"	kind:member	line:210
+materialclass_id	../app/models.py	/^    materialclass_id = Column(Integer, ForeignKey('materialclass.id'), nullable=False)$/;"	kind:variable	line:131
+materialclass_id	../app/models.py	/^    materialclass_id = Column(Integer, ForeignKey('materialclass.id'), nullable=False)$/;"	kind:variable	line:246
+matrix	../app/models.py	/^    matrix = Column(String(50))$/;"	kind:variable	line:117
+matrix	../app/models.py	/^    matrix = relationship('Matrix')$/;"	kind:variable	line:147
+matrix	../app/models.py	/^    matrix = relationship('Matrix')$/;"	kind:variable	line:262
+matrix_c	../app/models.py	/^    def matrix_c(self):$/;"	kind:member	line:225
+matrix_id	../app/models.py	/^    matrix_id = Column(Integer, ForeignKey('matrix.id'))$/;"	kind:variable	line:146
+matrix_id	../app/models.py	/^    matrix_id = Column(Integer, ForeignKey('matrix.id'))$/;"	kind:variable	line:261
+matrixenc	../app/views.py	/^def matrixenc(self, item):$/;"	kind:function	line:69
+models.py	../app/models.py	1;"	kind:file	line:1
+modified	../app/models.py	/^    def modified(self):$/;"	kind:member	line:176
+modified	../app/models.py	/^    def modified(self):$/;"	kind:member	line:293
+modified	../app/models.py	/^    def modified(self):$/;"	kind:member	line:334
+momentjs	../app/__init__.py	/^from .momentjs import momentjs$/;"	kind:namespace	line:5
+momentjs	../app/models.py	/^from .momentjs import momentjs$/;"	kind:namespace	line:7
+momentjs	../app/momentjs.py	/^class momentjs(object):$/;"	kind:class	line:4
+momentjs	../app/views.py	/^from .momentjs import momentjs$/;"	kind:namespace	line:37
+momentjs.py	../app/momentjs.py	1;"	kind:file	line:1
+mr	../app/models.py	/^    mr = Column(String(50), unique=True, nullable=False)$/;"	kind:variable	line:106
+mr	../app/models.py	/^    mr = relationship('Mr')$/;"	kind:variable	line:145
+mr	../app/models.py	/^    mr = relationship('Mr')$/;"	kind:variable	line:260
+mr_c	../app/models.py	/^    def mr_c(self):$/;"	kind:member	line:222
+mr_id	../app/models.py	/^    mr_id = Column(Integer, ForeignKey('mr.id'))$/;"	kind:variable	line:144
+mr_id	../app/models.py	/^    mr_id = Column(Integer, ForeignKey('mr.id'))$/;"	kind:variable	line:259
+muldelete	../app/views.py	/^    def muldelete(self, items):$/;"	kind:member	line:1222
+muldelete	../app/views.py	/^    def muldelete(self, items):$/;"	kind:member	line:1683
+muldelete	../app/views.py	/^    def muldelete(self, items):$/;"	kind:member	line:463
+muldelete	../app/views.py	/^    def muldelete(self, items):$/;"	kind:member	line:480
+muldelete	../app/views.py	/^    def muldelete(self, items):$/;"	kind:member	line:498
+muldelete	../app/views.py	/^    def muldelete(self, items):$/;"	kind:member	line:518
+muldelete	../app/views.py	/^    def muldelete(self, items):$/;"	kind:member	line:536
+muldelete	../app/views.py	/^    def muldelete(self, items):$/;"	kind:member	line:554
+muldelete	../app/views.py	/^    def muldelete(self, items):$/;"	kind:member	line:572
+muldelete	../app/views.py	/^    def muldelete(self, items):$/;"	kind:member	line:590
+mydefault	../app/models.py	/^def mydefault():$/;"	kind:function	line:20
+name	../app/models.py	/^    name = Column(String(100))$/;"	kind:variable	line:107
+name	../app/models.py	/^    name = Column(String(100))$/;"	kind:variable	line:28
+name	../app/models.py	/^    name = Column(String(100))$/;"	kind:variable	line:41
+name	../app/models.py	/^    name = Column(String(100))$/;"	kind:variable	line:51
+name	../app/models.py	/^    name = Column(String(100))$/;"	kind:variable	line:61
+name	../app/models.py	/^    name = Column(String(100))$/;"	kind:variable	line:74
+name	../app/models.py	/^    name = Column(String(100))$/;"	kind:variable	line:85
+name	../app/models.py	/^    name = Column(String(100))$/;"	kind:variable	line:96
+notes	../app/models.py	/^    notes = Column(String(150))$/;"	kind:variable	line:241
+old_codes	../app/helpers.py	/^def old_codes(self, file):$/;"	kind:function	line:685
+old_codes_update	../app/helpers.py	/^def old_codes_update(self, file):$/;"	kind:function	line:634
+oldcode	../app/models.py	/^    oldcode = Column(String(35), default='empty')$/;"	kind:variable	line:237
+oldcode_p	../app/models.py	/^    def oldcode_p(self):$/;"	kind:member	line:269
+oldcodes	../app/views.py	/^    def oldcodes(self): $/;"	kind:member	line:910
+openpyxl	../app/helpers.py	/^import openpyxl, os $/;"	kind:namespace	line:11
+os	../app/helpers.py	/^import openpyxl, os $/;"	kind:namespace	line:11
+os	../app/views.py	/^import os$/;"	kind:namespace	line:35
+os	../config.py	/^import os$/;"	kind:namespace	line:1
+page_not_found	../app/views.py	/^def page_not_found(e):$/;"	kind:function	line:1129
+page_size	../app/views.py	/^    page_size = 25$/;"	kind:variable	line:1134
+page_size	../app/views.py	/^    page_size = 25$/;"	kind:variable	line:1291
+page_size	../app/views.py	/^    page_size = 25$/;"	kind:variable	line:1373
+page_size	../app/views.py	/^    page_size = 25$/;"	kind:variable	line:1454
+page_size	../app/views.py	/^    page_size = 25$/;"	kind:variable	line:1535
+page_size	../app/views.py	/^    page_size = 25$/;"	kind:variable	line:184
+partner	../app/models.py	/^    partner = Column(String(50), unique=True, nullable=False)$/;"	kind:variable	line:60
+partner	../app/models.py	/^    partner = relationship('Partner')$/;"	kind:variable	line:137
+partner	../app/models.py	/^    partner = relationship('Partner')$/;"	kind:variable	line:252
+partner_c	../app/models.py	/^    def partner_c(self):$/;"	kind:member	line:228
+partner_id	../app/models.py	/^    partner_id = Column(Integer, ForeignKey('partner.id'), nullable=False)$/;"	kind:variable	line:136
+partner_id	../app/models.py	/^    partner_id = Column(Integer, ForeignKey('partner.id'), nullable=False)$/;"	kind:variable	line:251
+post_add	../app/views.py	/^    def post_add(self, item):$/;"	kind:member	line:423
+post_add	../app/views.py	/^    def post_add(self, item):$/;"	kind:member	line:689
+pretty_month_year	../app/models.py	/^    def pretty_month_year(self):$/;"	kind:member	line:170
+pretty_month_year	../app/views.py	/^def pretty_month_year(value):$/;"	kind:function	line:734
+quantity	../app/models.py	/^    quantity = Column(Integer, default=1)$/;"	kind:variable	line:148
+redirect	../app/helpers.py	/^from flask import flash, send_file, make_response, redirect, url_for$/;"	kind:namespace	line:3
+redirect	../app/views.py	/^from flask import render_template, flash, redirect, url_for$/;"	kind:namespace	line:1
+related_views	../app/views.py	/^    related_views = [CommentsView]$/;"	kind:variable	line:1137
+related_views	../app/views.py	/^    related_views = [CommentsView]$/;"	kind:variable	line:1294
+related_views	../app/views.py	/^    related_views = [CommentsView]$/;"	kind:variable	line:1376
+related_views	../app/views.py	/^    related_views = [CommentsView]$/;"	kind:variable	line:1457
+related_views	../app/views.py	/^    related_views = [CommentsView]$/;"	kind:variable	line:1538
+related_views	../app/views.py	/^    related_views = [DocumentView]$/;"	kind:variable	line:1218
+related_views	../app/views.py	/^    related_views = [DocumentView]$/;"	kind:variable	line:1240
+related_views	../app/views.py	/^    related_views = [DocumentView]$/;"	kind:variable	line:1628
+related_views	../app/views.py	/^    related_views = [SuperListRequest]$/;"	kind:variable	line:1679
+relationship	../app/models.py	/^from sqlalchemy.orm import relationship$/;"	kind:namespace	line:4
+render	../app/momentjs.py	/^    def render(self, format):$/;"	kind:member	line:8
+render_template	../app/views.py	/^from flask import render_template, flash, redirect, url_for$/;"	kind:namespace	line:1
+req_description	../app/models.py	/^    def req_description(self):$/;"	kind:member	line:193
+req_type	../app/models.py	/^    def req_type(self):$/;"	kind:member	line:181
+request	../app/views.py	/^from flask import request, url_for$/;"	kind:namespace	line:32
+request_type	../app/models.py	/^    def request_type(self):$/;"	kind:member	line:313
+request_type	../app/models.py	/^    request_type = Column(String(20))$/;"	kind:variable	line:149
+route_base	../app/index.py	/^    route_base = ''$/;"	kind:variable	line:10
+run.py	../run.py	1;"	kind:file	line:1
+search_columns	../app/views.py	/^    search_columns = UnitView.search_columns$/;"	kind:variable	line:647
+search_columns	../app/views.py	/^    search_columns = ['code', 'oldcode', 'created_by', 'created_on','vendor','mr']$/;"	kind:variable	line:1472
+search_columns	../app/views.py	/^    search_columns = ['code', 'oldcode', 'created_by', 'created_on','vendor','mr']$/;"	kind:variable	line:1553
+search_columns	../app/views.py	/^    search_columns = ['code', 'oldcode', 'created_by', 'created_on']$/;"	kind:variable	line:1309
+search_columns	../app/views.py	/^    search_columns = ['code', 'oldcode', 'created_by', 'created_on']$/;"	kind:variable	line:1391
+search_columns	../app/views.py	/^    search_columns = ['unit', 'materialclass', 'doctype', 'cdrlitem',$/;"	kind:variable	line:384
+search_columns	../app/views.py	/^    search_columns = ['unit', 'materialclass', 'doctype', 'partner', 'cdrlitem', 'documentclass','code', 'oldcode', 'created_by', 'created_on']$/;"	kind:variable	line:1152
+search_columns	../app/views.py	/^    search_columns = ['unit', 'materialclass', 'doctype', 'partner', 'cdrlitem', 'documentclass','code', 'oldcode', 'created_by', 'created_on']$/;"	kind:variable	line:252
+secure_filename	../app/helpers.py	/^from werkzeug.utils import secure_filename$/;"	kind:namespace	line:9
+secure_filename	../app/views.py	/^from werkzeug.utils import secure_filename$/;"	kind:namespace	line:33
+send_csv	../app/views.py	/^    def send_csv(reqid):$/;"	kind:member	line:53
+send_file	../app/helpers.py	/^from flask import flash, send_file, make_response, redirect, url_for$/;"	kind:namespace	line:3
+send_file	../app/views.py	/^from flask import g, send_file$/;"	kind:namespace	line:20
+setting_update	../app/helpers.py	/^def setting_update(file):$/;"	kind:function	line:564
+sheet	../app/models.py	/^    sheet = Column(String(3), default='001')$/;"	kind:variable	line:135
+sheet	../app/models.py	/^    sheet = Column(String(3), default='001')$/;"	kind:variable	line:250
+show_columns	../app/views.py	/^    show_columns = ['cdrlitem', 'name', 'description']$/;"	kind:variable	line:533
+show_columns	../app/views.py	/^    show_columns = ['doc', 'comment', 'created_by', 'created', 'changed_by', 'modified']$/;"	kind:variable	line:1125
+show_columns	../app/views.py	/^    show_columns = ['doctype', 'name', 'description']$/;"	kind:variable	line:495
+show_columns	../app/views.py	/^    show_columns = ['documentclass', 'name', 'description']$/;"	kind:variable	line:551
+show_columns	../app/views.py	/^    show_columns = ['materialclass', 'name', 'description']$/;"	kind:variable	line:477
+show_columns	../app/views.py	/^    show_columns = ['mr', 'name', 'description']$/;"	kind:variable	line:587
+show_columns	../app/views.py	/^    show_columns = ['partner', 'name', 'common_start', 'common_stop', 'description']$/;"	kind:variable	line:513
+show_columns	../app/views.py	/^    show_columns = ['unit', 'name', 'unit_type', 'start', 'stop', 'description']$/;"	kind:variable	line:458
+show_columns	../app/views.py	/^    show_columns = ['vendor', 'name', 'description']$/;"	kind:variable	line:569
+show_exclude_columns	../app/views.py	/^    show_exclude_columns = 'docrequests'$/;"	kind:variable	line:247
+show_fieldsets	../app/views.py	/^    show_fieldsets = [$/;"	kind:variable	line:1275
+show_fieldsets	../app/views.py	/^    show_fieldsets = [$/;"	kind:variable	line:1663
+show_fieldsets	../app/views.py	/^    show_fieldsets = [$/;"	kind:variable	line:406
+show_fieldsets	../app/views.py	/^    show_fieldsets = [$/;"	kind:variable	line:666
+show_template	../app/views.py	/^    show_template = 'appbuilder\/general\/model\/show_cascade.html'$/;"	kind:variable	line:1242
+show_template	../app/views.py	/^    show_template = 'appbuilder\/general\/model\/show_cascade.html'$/;"	kind:variable	line:1630
+show_template	../app/views.py	/^    show_template = 'appbuilder\/general\/model\/show_cascade.html'$/;"	kind:variable	line:352
+show_template	../app/views.py	/^    show_template = 'appbuilder\/general\/model\/show_cascade.html'$/;"	kind:variable	line:626
+show_title	../app/views.py	/^    show_title = 'Show Code'$/;"	kind:variable	line:1145
+show_title	../app/views.py	/^    show_title = 'Show Code'$/;"	kind:variable	line:1302
+show_title	../app/views.py	/^    show_title = 'Show Code'$/;"	kind:variable	line:1384
+show_title	../app/views.py	/^    show_title = 'Show Code'$/;"	kind:variable	line:1465
+show_title	../app/views.py	/^    show_title = 'Show Code'$/;"	kind:variable	line:1546
+show_title	../app/views.py	/^    show_title = 'Show Code'$/;"	kind:variable	line:196
+show_title	../app/views.py	/^    show_title = 'Show Code'$/;"	kind:variable	line:246
+show_title	../app/views.py	/^    show_title = 'Show Engineering Code Request'$/;"	kind:variable	line:634
+show_title	../app/views.py	/^    show_title = 'Show Vendor Code Request'$/;"	kind:variable	line:372
+show_title	../app/views.py	/^    show_title = 'View Code Request' $/;"	kind:variable	line:1627
+show_title	../app/views.py	/^    show_title = 'View Code Request'$/;"	kind:variable	line:1239
+shutil	../venv/bin/vba_extract.py	/^import shutil$/;"	kind:namespace	line:11
+someView	../app/index.py	/^class someView(BaseView):$/;"	kind:class	line:6
+start	../app/models.py	/^    start = Column(Integer, default=0)$/;"	kind:variable	line:29
+status	../app/models.py	/^    def status(self):$/;"	kind:member	line:274
+status	../app/models.py	/^    status = Column(String(30))$/;"	kind:variable	line:242
+stop	../app/models.py	/^    stop = Column(Integer)$/;"	kind:variable	line:30
+strftime	../app/models.py	/^from time import gmtime, strftime$/;"	kind:namespace	line:5
+support	../app/views.py	/^    def support(self, items):$/;"	kind:member	line:1191
+support	../app/views.py	/^    def support(self, items):$/;"	kind:member	line:1348
+support	../app/views.py	/^    def support(self, items):$/;"	kind:member	line:1430
+support	../app/views.py	/^    def support(self, items):$/;"	kind:member	line:1511
+support	../app/views.py	/^    def support(self, items):$/;"	kind:member	line:1592
+sys	../venv/bin/vba_extract.py	/^import sys$/;"	kind:namespace	line:10
+template	../app/widgets.py	/^    template = 'widgets\/my_list.html'/;"	kind:variable	line:5
+title	../app/views.py	/^    title = "Bapco Document ID Generator"$/;"	kind:variable	line:1247
+title	../app/views.py	/^    title = "Bapco Document ID Generator"$/;"	kind:variable	line:1635
+title	../app/views.py	/^    title = "Bapco Engineering Code Request"$/;"	kind:variable	line:637
+title	../app/views.py	/^    title = "Bapco Vendor Code Request"$/;"	kind:variable	line:375
+tocsv	../app/helpers.py	/^def tocsv(self, item,  codes_list):$/;"	kind:function	line:432
+tocsv	../app/views.py	/^from .helpers import (adddoc3, bapco, tocsv, toxlsx, codes_to_xlsx, $/;"	kind:namespace	line:25
+toxlsx	../app/helpers.py	/^def toxlsx(self, item,  codes_list):$/;"	kind:function	line:455
+toxlsx	../app/views.py	/^from .helpers import (adddoc3, bapco, tocsv, toxlsx, codes_to_xlsx, $/;"	kind:namespace	line:25
+unit	../app/models.py	/^    unit = Column(String(3), unique=True, nullable=False)$/;"	kind:variable	line:27
+unit	../app/models.py	/^    unit = relationship('Unit')$/;"	kind:variable	line:130
+unit	../app/models.py	/^    unit = relationship('Unit')$/;"	kind:variable	line:245
+unit_c	../app/models.py	/^    def unit_c(self):$/;"	kind:member	line:207
+unit_id	../app/models.py	/^    unit_id = Column(Integer, ForeignKey('unit.id'), nullable=False)$/;"	kind:variable	line:129
+unit_id	../app/models.py	/^    unit_id = Column(Integer, ForeignKey('unit.id'), nullable=False)$/;"	kind:variable	line:244
+unit_type	../app/models.py	/^    unit_type = Column(String(20), default='standard') $/;"	kind:variable	line:31
+update_from_xlsx	../app/helpers.py	/^def update_from_xlsx(file):$/;"	kind:function	line:536
+upload_form	../app/views.py	/^    def upload_form(self):$/;"	kind:member	line:992
+upload_setting	../app/views.py	/^    def upload_setting(self):$/;"	kind:member	line:844
+url_for	../app/helpers.py	/^from flask import flash, send_file, make_response, redirect, url_for$/;"	kind:namespace	line:3
+url_for	../app/views.py	/^from flask import render_template, flash, redirect, url_for$/;"	kind:namespace	line:1
+url_for	../app/views.py	/^from flask import request, url_for$/;"	kind:namespace	line:32
+user_create	../app/models.py	/^    def user_create(self):$/;"	kind:member	line:173
+uuid	../app/helpers.py	/^import uuid$/;"	kind:namespace	line:10
+validators_columns	../app/views.py	/^    validators_columns = {'vendor': [DataRequired(message='NOT Released: Vendor is required')],$/;"	kind:variable	line:365
+value_columns	../app/views.py	/^    value_columns = ['name']$/;"	kind:variable	line:1680
+value_columns	../app/views.py	/^    value_columns = ['username']$/;"	kind:variable	line:1219
+vba_data	../venv/bin/vba_extract.py	/^    vba_data = xlsm_zip.read('xl\/' + vba_filename)$/;"	kind:variable	line:35
+vba_extract.py	../venv/bin/vba_extract.py	1;"	kind:file	line:1
+vba_file	../venv/bin/vba_extract.py	/^    vba_file = open(vba_filename, "wb")$/;"	kind:variable	line:38
+vba_filename	../venv/bin/vba_extract.py	/^vba_filename = 'vbaProject.bin'$/;"	kind:variable	line:16
+vendor	../app/models.py	/^    vendor = Column(String(50), unique=True, nullable=False)$/;"	kind:variable	line:95
+vendor	../app/models.py	/^    vendor = relationship('Vendor')$/;"	kind:variable	line:143
+vendor	../app/models.py	/^    vendor = relationship('Vendor')$/;"	kind:variable	line:258
+vendor_c	../app/models.py	/^    def vendor_c(self):$/;"	kind:member	line:219
+vendor_id	../app/models.py	/^    vendor_id = Column(Integer, ForeignKey('vendor.id'))$/;"	kind:variable	line:142
+vendor_id	../app/models.py	/^    vendor_id = Column(Integer, ForeignKey('vendor.id'))$/;"	kind:variable	line:257
+views	../app/__init__.py	/^from app import views$/;"	kind:namespace	line:63
+views	../app/views.py	/^    views = [UnitView, MaterialclassView, DoctypeView, PartnerView]$/;"	kind:variable	line:730
+views.py	../app/views.py	1;"	kind:file	line:1
+webtools.py	../webtools.py	1;"	kind:file	line:1
+widget	../app/views.py	/^                                             widget=Select2AJAXWidget(endpoint='\/docrequestsview\/api\/column\/add\/unit')),$/;"	kind:variable	line:686
+widgets.py	../app/widgets.py	1;"	kind:file	line:1
+wsgi.py	../wsgi.py	1;"	kind:file	line:1
+xlsm_file	../venv/bin/vba_extract.py	/^    xlsm_file = sys.argv[1]$/;"	kind:variable	line:20
+xlsm_zip	../venv/bin/vba_extract.py	/^    xlsm_zip = ZipFile(xlsm_file, 'r')$/;"	kind:variable	line:32
+xlsxwriter	../app/helpers.py	/^import csv, xlsxwriter$/;"	kind:namespace	line:8

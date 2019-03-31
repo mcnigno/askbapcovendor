@@ -7,7 +7,7 @@ SECRET_KEY = '\2\1thisismyscretkey\1\2\e\y\y\h'
 
 # The SQLAlchemy connection string.
 #SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db')
-SQLALCHEMY_DATABASE_URI = 'mysql://root:lollipop300777@localhost/bapco'
+SQLALCHEMY_DATABASE_URI = 'mysql://root:lollipop300777@localhost/askbapcovendor'
 #SQLALCHEMY_DATABASE_URI = 'postgresql://root:password@localhost/myapp'
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 # Flask-WTF flag for CSRF
@@ -17,11 +17,11 @@ CSRF_ENABLED = True
 # GLOBALS FOR APP Builder 
 #------------------------------
 # Uncomment to setup Your App name
-APP_NAME = "ASK BAPCO" 
+APP_NAME = "ASK BAPCO | Vendor"  
 #APP_NAME = "Q"
 
 # Uncomment to setup Setup an App icon 
-APP_ICON = "/static/img/ask_bapco.png"
+#APP_ICON = "/static/img/ask_bapco.png"
 
 #----------------------------------------------------
 # AUTHENTICATION CONFIG

@@ -39,9 +39,16 @@ body {
 }
 */
 .navbar-inverse {
-    background-color: #4b1f68;
+    background-color: #24681f;
 }
-
+.panel-primary>.panel-heading {
+    color: #ffffff;
+    background-color: #24681f;
+    border-color: #24681f;
+}
+body > header > div > div > div.navbar-header > span > a{
+    color: white;
+}
 .pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
     z-index: 3;
     color: #ffffff;
