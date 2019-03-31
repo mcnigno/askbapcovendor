@@ -195,7 +195,7 @@ class PendingView(ModelView):
     edit_title = 'Edit Code'
     show_title = 'Show Code'
     
-    list_columns = ['code_type', 'bapco_code', 'oldcode_p', 'created','docrequests.request_type']
+    list_columns = ['code_type', 'bapco_code', 'oldcode_p', 'created']
     edit_columns = ['oldcode', 'notes'] 
     
     label_columns = {
@@ -230,7 +230,7 @@ class PendingView(ModelView):
         redirect(self.get_redirect())
         #self.update_redirect()
         return send_file('static/csv/' + filename, as_attachment=True)
-
+  
 
 class SuperDocumentView(CompactCRUDMixin, ModelView):
     datamodel = SQLAInterface(Document)
@@ -1731,16 +1731,16 @@ appbuilder.add_view(ListRequest, "All Requests",
 appbuilder.add_view(DocumentView, "All Your Codes",
                     icon="fa-list", category="Your Codes")
 
-
-appbuilder.add_separator(category="Your Codes")
 '''
+appbuilder.add_separator(category="Your Codes")
+
 appbuilder.add_view(EngDocumentView, "Engineering Codes",
                     icon="fas fa-copy element", category="Your Codes")
-'''
+
 appbuilder.add_view(VendorDocumentView, "Vendor Codes",
                     icon="fas fa-copy element", category="Your Codes")
 
-
+'''
 appbuilder.add_separator(category="Your Codes")
 appbuilder.add_view(PendingView, "Only Pending Codes",
                     icon="fa-folder-open", category="Your Codes",
@@ -1802,13 +1802,13 @@ appbuilder.add_view(SuperDocumentView, "All Codes",
                     category_icon='fa-envelope')
 
 
-
+'''
 appbuilder.add_view(SuperVendorDocumentView, "All Vendor Codes",
                     icon="fas fa-copy element", category="Supervisor",
                     category_icon='fa-envelope')
 
 
-'''
+
 appbuilder.add_view(SuperEngDocumentView, "All Engineering Codes",
                     icon="fas fa-copy element", category="Supervisor",
                     category_icon='fa-envelope')

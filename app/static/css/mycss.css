@@ -43,8 +43,8 @@ body {
 }
 .panel-primary>.panel-heading {
     color: #ffffff;
-    background-color: #24681f;
-    border-color: #24681f;
+    background-color: #522d6d;
+    border-color: #522d6d;
 }
 body > header > div > div > div.navbar-header > span > a{
     color: white;
@@ -182,4 +182,10 @@ body > div.container > div > div > div:nth-child(3) > div.table-responsive > tab
 }
 #search_input{
     margin-top: 10px;
+}
+
+#index_table i{
+    color: #d32930;
+    padding-right: 7px;
+    
 }

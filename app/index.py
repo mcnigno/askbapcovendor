@@ -1,6 +1,7 @@
 
 
 from flask_appbuilder import BaseView, expose
+from flask import  redirect, url_for
  
 
 class someView(BaseView):
@@ -29,9 +30,11 @@ class someView(BaseView):
                                     partner=partner,
                                     unit=unit,
                                     material=material,
-                                    doctype=doctype)
-
-
+                                    doctype=doctype) 
+    
+  
 class MyIndexView(someView):
     index_template = 'index.html'
 
+
+       
