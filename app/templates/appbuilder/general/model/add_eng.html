@@ -1,0 +1,33 @@
+{% extends "appbuilder/base.html" %}
+{% import 'appbuilder/general/lib.html' as lib %}
+
+{% block content %}
+<div class="add_eng">
+
+        
+
+<strong><i id="eng_ico" class="fas fa-copy element"></i> ENGINEERING DOCUMENT REQUEST</strong>
+<br>
+
+
+
+
+{{ lib.panel_begin(title) }}
+
+{% block add_form %}
+
+
+<style media="screen" type="text/css">
+
+
+
+</style>
+
+    {{ widgets.get('add')(form_action=form_action)|safe }}
+</div>
+
+{% endblock %}
+
+{{ lib.panel_end() }}
+
+{% endblock %}
