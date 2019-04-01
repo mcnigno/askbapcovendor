@@ -1,7 +1,7 @@
 # copy DB
 mysql -uroot -p
 create database askbapcovendor;
-mysqldump -u root -p bapco > askbapco.sql;
+mysqldump -u root -p bapco > askbapco.sql
 mysql -u root -p askbapcovendor < askbapco.sql
 
 # create VENV, install requirements, set uWSGI
