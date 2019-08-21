@@ -248,7 +248,7 @@ class SuperDocumentView(CompactCRUDMixin, ModelView):
 
     #list_columns = ['code_type', 'bapco_code', 'oldcode_p', 'created_by', 'created','cdrlitem', 'documentclass']
     list_columns = ['code_type', 'bapco_code', 'oldcode_p', 'created']
-    edit_columns = ['oldcode', 'cdrlitem', 'documentclass','vendor','mr','notes']
+    edit_columns = ['oldcode', 'cdrlitem', 'documentclass', 'partner', 'vendor', 'mr', 'notes']
     search_columns = ['unit', 'materialclass', 'doctype', 'partner', 'cdrlitem', 'documentclass','code', 'oldcode', 'created_by', 'created_on']
     label_columns = {
         'id': 'ID',
