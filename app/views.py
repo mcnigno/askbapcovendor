@@ -322,6 +322,14 @@ class SuperDocumentView(CompactCRUDMixin, ModelView):
         self.update_redirect()
         return send_file('static/csv/' + filename, as_attachment=True)
 
+    @action("muldelete", "Delete", "Delete all Really?", "fa-rocket")
+    def muldelete(self, items):
+        if isinstance(items, list):
+            self.datamodel.delete_all(items)
+            self.update_redirect()
+        else:
+            self.datamodel.delete(items)
+        return redirect(self.get_redirect())
 
 # Engineering Form Request
 

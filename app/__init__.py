@@ -1,9 +1,8 @@
 import logging
 from flask import Flask
-from flask.ext.appbuilder import SQLA, AppBuilder
+from flask_appbuilder import SQLA, AppBuilder
 from app.index import MyIndexView
 from .momentjs import momentjs
-
 
 
 
