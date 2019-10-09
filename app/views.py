@@ -588,11 +588,10 @@ class VendorView(ModelView):
 
 class MrView(ModelView):
     datamodel = SQLAInterface(Mr)
-    list_columns = ['mr', 'name', 'description']
-
-    add_columns = ['mr', 'name', 'description']
-    edit_columns = ['mr', 'name', 'description']
-    show_columns = ['mr', 'name', 'description']
+    list_columns = ['mr', 'name','start','stop','materialclass']
+    add_columns = ['mr', 'name','start','stop','materialclass', 'description']
+    edit_columns = ['mr', 'name','start','stop','materialclass', 'description']
+    show_columns = ['mr', 'name','start','stop','materialclass', 'description']
 
     @action("muldelete", "Delete", "Delete all Really?", "fa-rocket")
     def muldelete(self, items):

@@ -105,6 +105,9 @@ class Mr(Model):
     id = Column(Integer, primary_key=True)
     mr = Column(String(50), unique=True, nullable=False)
     name = Column(String(100))
+    start = Column(Integer, default=0)
+    stop = Column(Integer, default=0)
+    materialclass = Column(String(100))
     description = Column(String(100))
 
     def __repr__(self):

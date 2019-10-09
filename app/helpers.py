@@ -149,8 +149,10 @@ def bapco(self, item):
     else:
         item.request_type = 'engineering'
     
-    # Set item_matrix based on unit type
+    # Set item_matrix based on unit type or Material Requisition
+    print('before Query')
     result = db.session.query(Unit).filter(Unit.unit == str(item.unit)).first()
+    material_req = db.session.query(Mr).filter(Mr.id == str(item.mr.id)).first()
     
     print('UNIT TYPE:', result.unit_type, 'PARTNER:', item.partner)
     if str(result.unit_type) == 'common' or str(item.partner) == 'Subcontractors':
@@ -164,6 +166,19 @@ def bapco(self, item):
                                      str(item.partner)
                                      ))
     
+        
+    elif str(item.materialclass) in material_req.materialclass.split(','):
+        print('Material Class found in Material Requisition',material_req.materialclass.split(','),item.materialclass )
+    
+        
+        item_matrix = str.join('-', (str(item.unit),
+                                     str(item.materialclass),
+                                     str(item.doctype),
+                                     # item.sheet,
+                                     str(item.mr)
+                                     ))
+
+        
     else:
 
         item_matrix = str.join('-', (str(item.unit),
@@ -248,6 +263,33 @@ def bapco(self, item):
             message = 'Your code is ' + code
             flash(message, category='info')
         
+        elif str(item.materialclass) in material_req.materialclass.split(','):
+            print('item partner to find: ', item.partner)
+            
+            #partner = db.session.query(Partner).filter(Partner.partner == str(item.partner)).first()
+
+            matrix = Matrix(counter=material_req.start + 1, matrix=str(item_matrix))
+            datamodel = SQLAInterface(Matrix, session=session)
+            datamodel.add(matrix)
+
+            matrix = db.session.query(Matrix).filter(Matrix.matrix == item_matrix).first()
+
+
+            # Add new Doc with quantity partner common start + 1
+            datamodel = SQLAInterface(Document, session=session)
+            
+            code = item_serial + "-" + str(material_req.start + 1).zfill(5) + "-" + item.sheet
+            
+            #doc = Document(docrequests_id=item.id, code=code)
+            doc.matrix_id = matrix.id
+            doc.docrequests_id = item.id
+            doc.code = code
+
+            datamodel.add(doc)
+            message = 'Your code is ' + code
+            flash(message, category='info')
+
+
         else:
             # Create a new Matrix for standard units
             
