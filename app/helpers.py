@@ -155,7 +155,19 @@ def bapco(self, item):
     material_req = db.session.query(Mr).filter(Mr.id == str(item.mr.id)).first()
     
     print('UNIT TYPE:', result.unit_type, 'PARTNER:', item.partner)
-    if str(result.unit_type) == 'common' or str(item.partner) == 'Subcontractors':
+
+    if str(item.materialclass) in material_req.materialclass.split(','):
+        print('Material Class found in Material Requisition',material_req.materialclass.split(','),item.materialclass )
+    
+        
+        item_matrix = str.join('-', (str(item.unit),
+                                     str(item.materialclass),
+                                     str(item.doctype),
+                                     # item.sheet,
+                                     str(item.mr)
+                                     ))
+
+    elif str(result.unit_type) == 'common' or str(item.partner) == 'Subcontractors':
         print('Match unit type common or subcontracting Found')
 
         # Add the partner id to the matrix
@@ -167,16 +179,7 @@ def bapco(self, item):
                                      ))
     
         
-    elif str(item.materialclass) in material_req.materialclass.split(','):
-        print('Material Class found in Material Requisition',material_req.materialclass.split(','),item.materialclass )
     
-        
-        item_matrix = str.join('-', (str(item.unit),
-                                     str(item.materialclass),
-                                     str(item.doctype),
-                                     # item.sheet,
-                                     str(item.mr)
-                                     ))
 
         
     else:
