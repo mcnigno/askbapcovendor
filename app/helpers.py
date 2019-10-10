@@ -192,7 +192,7 @@ def bapco(self, item):
                                      str(item.doctype),
                                      # item.sheet,
                                      ))
-    '''
+    
     # Set the bapco base code
     item_serial = str.join('-', (str(item.unit),
                                  str(item.materialclass),
@@ -209,9 +209,9 @@ def bapco(self, item):
                                      str(item.partner)
                                      )
     )
-    '''
+    
     print('Final Matrix',item_matrix)
-    item_serial = item_matrix
+    #item_serial = item_matrix
     matrix = db.session.query(Matrix).filter(Matrix.matrix == item_matrix).first()
     partner = db.session.query(Partner).filter(Partner.partner == str(item.partner)).first()
     print('item_matrix, matrix',item_matrix, matrix)
@@ -229,7 +229,7 @@ def bapco(self, item):
 
             item.matrix_id = matrix.id
             doc.matrix_id = matrix.id
-            code = item_matrix + "-" + str(matrix.counter).zfill(5) + "-" + item.sheet
+            code = item_serial + "-" + str(matrix.counter).zfill(5) + "-" + item.sheet
 
             datamodel = SQLAInterface(Document, session=session)
             
