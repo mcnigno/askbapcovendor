@@ -195,7 +195,7 @@ class PendingView(ModelView):
     edit_title = 'Edit Code'
     show_title = 'Show Code'
     
-    list_columns = ['code_type', 'bapco_code', 'oldcode_p', 'created']
+    list_columns = ['code_type', 'bapco_code', 'oldcode_p','mr', 'created']
     edit_columns = ['oldcode', 'notes'] 
     
     label_columns = {
@@ -247,7 +247,7 @@ class SuperDocumentView(CompactCRUDMixin, ModelView):
     show_exclude_columns = 'docrequests'
 
     #list_columns = ['code_type', 'bapco_code', 'oldcode_p', 'created_by', 'created','cdrlitem', 'documentclass']
-    list_columns = ['code_type', 'bapco_code', 'oldcode_p', 'created']
+    list_columns = ['code_type', 'bapco_code', 'oldcode_p','mr', 'created']
     edit_columns = ['oldcode', 'cdrlitem', 'documentclass', 'partner', 'vendor', 'mr', 'notes']
     search_columns = ['unit', 'materialclass', 'doctype', 'partner', 'cdrlitem', 'documentclass','code', 'oldcode', 'created_by', 'created_on']
     label_columns = {
@@ -1153,7 +1153,7 @@ class DocumentView(CompactCRUDMixin, ModelView):
 
     
     #show_columns = ['id', 'code_type', 'bapco_code', 'oldcode', 'created_by', 'created', 'status']
-    list_columns = ['code_type', 'bapco_code', 'oldcode_p', 'created']
+    list_columns = ['code_type', 'bapco_code', 'oldcode_p','mr', 'created']
     edit_columns = ['oldcode', 'notes']
     
     search_columns = ['unit', 'materialclass', 'doctype', 'partner', 'cdrlitem', 'documentclass','code', 'oldcode', 'created_by', 'created_on']
