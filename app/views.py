@@ -1238,7 +1238,7 @@ class ListRequest(ModelView):
     datamodel = SQLAInterface(DocRequests)
     base_order = ('id', 'desc')
     base_filters = [['created_by', FilterEqualFunction, get_user],['request_type',FilterEqual,'Vendor']]
-    base_permissions = ['can_list', 'can_show'] 
+    base_permissions = ['can_list', 'can_show', 'can_delete'] 
 
     list_title = 'All Requests'
     add_title = 'Add new Request'

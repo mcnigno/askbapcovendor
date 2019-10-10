@@ -153,10 +153,11 @@ def bapco(self, item):
     print('before Query')
     result = db.session.query(Unit).filter(Unit.unit == str(item.unit)).first()
     material_req = db.session.query(Mr).filter(Mr.id == str(item.mr.id)).first()
-    
+    mc_check = False
     print('UNIT TYPE:', result.unit_type, 'PARTNER:', item.partner)
 
     if str(item.materialclass) in material_req.materialclass.split(','):
+        mc_check = True
         print('Material Class found in Material Requisition',material_req.materialclass.split(','),item.materialclass )
     
         
@@ -169,6 +170,7 @@ def bapco(self, item):
 
     elif str(result.unit_type) == 'common' or str(item.partner) == 'Subcontractors':
         print('Match unit type common or subcontracting Found')
+        
 
         # Add the partner id to the matrix
         item_matrix = str.join('-', (str(item.unit),
@@ -183,12 +185,14 @@ def bapco(self, item):
 
         
     else:
+        
 
         item_matrix = str.join('-', (str(item.unit),
                                      str(item.materialclass),
                                      str(item.doctype),
                                      # item.sheet,
                                      ))
+    '''
     # Set the bapco base code
     item_serial = str.join('-', (str(item.unit),
                                  str(item.materialclass),
@@ -205,15 +209,40 @@ def bapco(self, item):
                                      str(item.partner)
                                      )
     )
-    
+    '''
+    print('Final Matrix',item_matrix)
+    item_serial = item_matrix
     matrix = db.session.query(Matrix).filter(Matrix.matrix == item_matrix).first()
     partner = db.session.query(Partner).filter(Partner.partner == str(item.partner)).first()
     print('item_matrix, matrix',item_matrix, matrix)
 
     if matrix:
         print('matrix, counter',matrix, matrix.counter)
+
+        if mc_check and matrix.counter + 1 <= material_req.stop:
+            print('Common Material Class Found')
+            print('matrix, counter',matrix, matrix.counter)
+            #
+            matrix.counter += 1
+            datamodel = SQLAInterface(Matrix, session=session)
+            datamodel.edit(matrix)
+
+            item.matrix_id = matrix.id
+            doc.matrix_id = matrix.id
+            code = item_matrix + "-" + str(matrix.counter).zfill(5) + "-" + item.sheet
+
+            datamodel = SQLAInterface(Document, session=session)
+            
+            doc.docrequests_id = item.id
+            doc.code = code
         
-        if matrix.counter + 1 <= result.stop or matrix.counter + 1 <= partner.common_stop:
+            datamodel.add(doc)
+
+            message = 'Your code is ' + code
+            flash(message, category='info')
+        
+        elif matrix.counter + 1 <= result.stop or matrix.counter + 1 <= partner.common_stop:
+            print('Common Unit Found')
             print('matrix, counter',matrix, matrix.counter)
             #
             matrix.counter += 1
@@ -239,7 +268,34 @@ def bapco(self, item):
             
     else:
         # Create a New Matrix for common units
-        if result.unit_type == 'common' or str(item.partner) == 'Subcontractors':
+        print('No Matrix Find, create new one.', str(result.unit_type))
+        if mc_check == True:
+            print('Create new Common Material Class Matrix')
+            
+            #partner = db.session.query(Partner).filter(Partner.partner == str(item.partner)).first()
+
+            matrix = Matrix(counter=material_req.start + 1, matrix=str(item_matrix))
+            datamodel = SQLAInterface(Matrix, session=session)
+            datamodel.add(matrix)
+
+            matrix = db.session.query(Matrix).filter(Matrix.matrix == item_matrix).first()
+
+            # Add new Code with MR start + 1
+            datamodel = SQLAInterface(Document, session=session)
+            
+            code = item_serial + "-" + str(material_req.start + 1).zfill(5) + "-" + item.sheet
+            
+            #doc = Document(docrequests_id=item.id, code=code)
+            doc.matrix_id = matrix.id
+            doc.docrequests_id = item.id
+            doc.code = code
+
+            datamodel.add(doc)
+            message = 'Your code is ' + code
+            flash(message, category='info')
+        
+        elif result.unit_type == 'common' or str(item.partner) == 'Subcontractors':
+            print('Create new Commun Unit Matrix')
 
             print('item partner to find: ', item.partner)
             
@@ -266,42 +322,16 @@ def bapco(self, item):
             message = 'Your code is ' + code
             flash(message, category='info')
         
-        elif str(item.materialclass) in material_req.materialclass.split(','):
-            print('item partner to find: ', item.partner)
-            
-            #partner = db.session.query(Partner).filter(Partner.partner == str(item.partner)).first()
-
-            matrix = Matrix(counter=material_req.start + 1, matrix=str(item_matrix))
-            datamodel = SQLAInterface(Matrix, session=session)
-            datamodel.add(matrix)
-
-            matrix = db.session.query(Matrix).filter(Matrix.matrix == item_matrix).first()
-
-
-            # Add new Doc with quantity partner common start + 1
-            datamodel = SQLAInterface(Document, session=session)
-            
-            code = item_serial + "-" + str(material_req.start + 1).zfill(5) + "-" + item.sheet
-            
-            #doc = Document(docrequests_id=item.id, code=code)
-            doc.matrix_id = matrix.id
-            doc.docrequests_id = item.id
-            doc.code = code
-
-            datamodel.add(doc)
-            message = 'Your code is ' + code
-            flash(message, category='info')
-
 
         else:
             # Create a new Matrix for standard units
+            print('Create new Standard Unit Matrix')
             
             datamodel = SQLAInterface(Matrix, session=session)
             matrix = Matrix(counter=result.start + 1, matrix=item_matrix)
             datamodel.add(matrix)  
 
             matrix = db.session.query(Matrix).filter(Matrix.matrix == item_matrix).first()
-        
 
             # Add new Doc with quantity 1
             datamodel = SQLAInterface(Document, session=session)
